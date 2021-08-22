@@ -11,9 +11,12 @@ OpenCore config for my Rocket Lake desktop containing:
 
 At the moment:
 * the machine boots, and show both displays (but only mirrored - iGPU)
-* no video acceleration
-* no sound
+* sound works with alcid 69
 * on board ethernet (intel) works
 * some USB ports work, not all
+
+What doesn't work:
+* video acceleration (rocket lake iGPU not supported)
+* sleep/resume
 
 Initial config based on : https://www.tonymacx86.com/threads/utterdisbeliefs-comet-lake-itx-asrock-b560m-itx-ac-i3-10320-32gb-ddr4-gt710-2gb.312443/
