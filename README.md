@@ -15,7 +15,7 @@ Working:
 * accelerated graphics with native AMD driver
 * sound works with alcid 69
 * on board ethernet (intel) works
-* some USB ports work, not all
+* some USB ports work, not all (did not map USB ports yet)
 * video acceleration (rocket lake iGPU not supported)
 * sleep/resume with following pmset options:
 ```
