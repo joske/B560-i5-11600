@@ -13,10 +13,11 @@ OpenCore config for my Rocket Lake desktop containing:
 Working:
 * the machine boots, and show both displays
 * accelerated graphics with native AMD driver
-* sound works with alcid 69
+* sound works with alcid 69 (USB audio, HDMI/DP audio). Sees the internal audio, but does not seem to output any sound
 * on board ethernet (intel) works
 * some USB ports work, not all (did not map USB ports yet)
 * video acceleration (rocket lake iGPU not supported)
+* appletv+ playback with shikigva=128
 * sleep/resume with following pmset options:
 ```
 ➜  ~ sudo pmset -g
