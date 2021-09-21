@@ -45,5 +45,6 @@ Currently in use:
 
 What doesn't work:
 * some USB ports
+* audio out of internal jack
 
 Initial config based on : https://www.tonymacx86.com/threads/utterdisbeliefs-comet-lake-itx-asrock-b560m-itx-ac-i3-10320-32gb-ddr4-gt710-2gb.312443/
