@@ -16,19 +16,35 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enables native CPU power management</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Fixes RTC-related boot issues (AWAC = A Weird Ass Clock)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-AWAC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-EC-USBX-DESKTOP.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC-USBX-DESKTOP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-PLUG-DRTNIA.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PLUG-DRTNIA.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-RHUB.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RHUB.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -205,6 +221,13 @@
 				<data>AgAAAA==</data>
 				<key>model</key>
 				<string>Intel UHD 630 Comet Lake</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>QgAAAA==</data>
+				<key>alctsel</key>
+				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -411,24 +434,6 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>CPUFriendDataProvider.kext</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -758,6 +763,26 @@
 				<key>Auxiliary</key>
 				<true/>
 			</dict>
+			<dict>
+				<key>Name</key>
+				<string>acpidump.efi</string>
+				<key>Comment</key>
+				<string>acpidump.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>acpidump.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>NVRAM</key>
@@ -781,7 +806,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>rtcfx_exclude=00-FF keepsyms=1 swd_panic=1 shikigva=128 alcid=69</string>
+				<string>rtcfx_exclude=00-FF keepsyms=1 swd_panic=1 shikigva=128</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>

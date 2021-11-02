@@ -13,10 +13,10 @@ OpenCore config for my Rocket Lake desktop containing:
 Working:
 * the machine boots, and show both displays
 * accelerated graphics with native AMD driver
-* sound works with alcid 69 (USB audio, HDMI/DP audio). Sees the internal audio, but does not seem to output any sound
+* external sound works with alcid 69 (USB audio, HDMI/DP audio). Sees the internal audio device, but does not seem to output any sound and all apps using sound with that device selected are getting stuck
 * on board ethernet (intel) works
-* some USB ports work, not all (did not map USB ports yet)
-* video acceleration (rocket lake iGPU not supported)
+* all USB ports work
+* video acceleration (with the rx460 - rocket lake iGPU not supported)
 * appletv+ playback with shikigva=128
 * sleep/resume with following pmset options:
 ```
@@ -44,7 +44,6 @@ Currently in use:
 ```
 
 What doesn't work:
-* some USB ports
-* audio out of internal jack
+* audio out of internal jack - does not matter, using USB audio directly to my Kanto TUK speakers
 
 Initial config based on : https://www.tonymacx86.com/threads/utterdisbeliefs-comet-lake-itx-asrock-b560m-itx-ac-i3-10320-32gb-ddr4-gt710-2gb.312443/
