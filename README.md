@@ -3,13 +3,16 @@
 OpenCore config for my Rocket Lake desktop containing:
 
 * ASUS prime B560-PLUS 
-* i5 11600
+* i5 11600 + be quiet! Shadow Rock 3 cooler
+* be quiet! Pure Power 11 500W
 * radeon rx 460
 * Samsung 980 pro NVMe drive (Linux)
 * Samsung 850 EVO 500 GB (GhostBSD)
 * Samsung 850 EVO 250 GB (macOS)
 * Kingston 128 GB (win 10)
 * 32 GB corsair DDR4-3200 RAM
+* ASUS DRW-24D5MT
+* be quiet! PURE BASE 600 case
 
 Working:
 * the machine boots, and show both displays
@@ -42,6 +45,9 @@ Currently in use:
  highstandbythreshold 50
  standbydelaylow      86400
 ```
+
+Quirk:
+* DVD player clicks every 7 minutes or so - seems to be known issue
 
 What doesn't work:
 * audio out of internal jack - does not matter, using USB audio directly to my Kanto TUK speakers
