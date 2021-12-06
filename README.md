@@ -13,11 +13,10 @@ OpenCore config for my Rocket Lake desktop containing:
 
 Working:
 * the machine boots, and show both displays
-* accelerated graphics with native AMD driver
+* accelerated graphics with native AMD driver (with the rx460 - rocket lake iGPU not supported)
 * external sound works with alcid 69 (USB audio, HDMI/DP audio). Sees the internal audio device, but does not seem to output any sound and all apps using sound with that device selected are getting stuck
 * on board ethernet (intel) works
 * all USB ports work
-* video acceleration (with the rx460 - rocket lake iGPU not supported)
 * appletv+ playback with shikigva=128
 * sleep/resume with following pmset options:
 ```
