@@ -5,7 +5,7 @@ OpenCore config for my Rocket Lake desktop containing:
 * ASUS prime B560-PLUS 
 * i5 11600 + be quiet! Shadow Rock 3 cooler
 * be quiet! Pure Power 11 500W
-* radeon rx 460
+* AMD Radeon rx 460
 * Samsung 980 pro NVMe drive (Linux)
 * Samsung 850 EVO 500 GB (GhostBSD)
 * Samsung 850 EVO 250 GB (macOS)
