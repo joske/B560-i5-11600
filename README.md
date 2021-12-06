@@ -6,8 +6,9 @@ OpenCore config for my Rocket Lake desktop containing:
 * i5 11600
 * radeon rx 460
 * Samsung 980 pro NVMe drive (Linux)
-* Samsung 850 EVO 500 GB (Linux)
+* Samsung 850 EVO 500 GB (GhostBSD)
 * Samsung 850 EVO 250 GB (macOS)
+* Kingston 128 GB (win 10)
 * 32 GB corsair DDR4-3200 RAM
 
 Working:
