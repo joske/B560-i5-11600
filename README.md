@@ -17,7 +17,7 @@ OpenCore config for my Rocket Lake desktop containing:
 Working:
 * the machine boots, and show both displays
 * accelerated graphics with native AMD driver (with the rx460 - rocket lake iGPU not supported)
-* external sound works with alcid 69 (USB audio, HDMI/DP audio). Sees the internal audio device, but does not seem to output any sound and all apps using sound with that device selected are getting stuck
+* sound works with alcid 11 (jack, USB audio, HDMI/DP audio). Since AppleALC 1.6.8, internal audio works!
 * on board ethernet (intel) works
 * all USB ports work
 * appletv+ playback with shikigva=128
@@ -50,6 +50,6 @@ Quirk:
 * DVD player clicks every 7 minutes or so - seems to be known issue
 
 What doesn't work:
-* audio out of internal jack - does not matter, using USB audio directly to my Kanto TUK speakers
+nothing (well, I don't know about apple services like handover and stuff as I don't use those. I guess it works).
 
 Initial config based on : https://www.tonymacx86.com/threads/utterdisbeliefs-comet-lake-itx-asrock-b560m-itx-ac-i3-10320-32gb-ddr4-gt710-2gb.312443/
