@@ -256,6 +256,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
@@ -467,6 +469,8 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
+				<key>Strategy</key>
+				<string>Disable</string>
 			</dict>
 		</array>
 		<key>Emulate</key>
@@ -587,6 +591,8 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -599,6 +605,8 @@
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<true/>
+			<key>ForceAquantiaEthernet</key>
+			<false/>
 			<key>ForceSecureBootScheme</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
@@ -677,8 +685,8 @@
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
-			<key>SerialInit</key>
-			<false/>
+			<key>LogModules</key>
+			<string>*</string>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -688,12 +696,8 @@
 		<array/>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
-			<key>AllowToggleSip</key>
-			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -718,6 +722,13 @@
 			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
+		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -817,8 +828,6 @@
 		</dict>
 		<key>Delete</key>
 		<dict/>
-		<key>LegacyEnable</key>
-		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -832,37 +841,6 @@
 		<true/>
 		<key>CustomMemory</key>
 		<false/>
-		<key>DataHub</key>
-		<dict>
-			<key>ARTFrequency</key>
-			<integer>0</integer>
-			<key>BoardProduct</key>
-			<string>Mac-BE088AF8C5EB4FA2</string>
-			<key>BoardRevision</key>
-			<data>Hw==</data>
-			<key>DevicePathsSupported</key>
-			<integer>0</integer>
-			<key>FSBFrequency</key>
-			<integer>0</integer>
-			<key>InitialTSC</key>
-			<integer>0</integer>
-			<key>PlatformName</key>
-			<string></string>
-			<key>SmcBranch</key>
-			<data>ajEzM180XzU=</data>
-			<key>SmcPlatform</key>
-			<data>ajEzNQAAAAA=</data>
-			<key>SmcRevision</key>
-			<data>AkEPAAAC</data>
-			<key>StartupPowerEvents</key>
-			<integer>0</integer>
-			<key>SystemProductName</key>
-			<string>iMac18,3</string>
-			<key>SystemSerialNumber</key>
-			<string>C0000000000J</string>
-			<key>SystemUUID</key>
-			<string>F9022679-F639-4488-9198-DFDC4E010D06</string>
-		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseFeatures</key>
@@ -967,14 +945,16 @@
 		<key>Drivers</key>
 		<array>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
 				<key>Comment</key>
-				<string>NvmExpressDxe.efi</string>
-				<key>Path</key>
 				<string>NvmExpressDxe.efi</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Arguments</key>
-				<string></string>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>NvmExpressDxe.efi</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -985,6 +965,8 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -995,6 +977,8 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1005,6 +989,8 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1015,6 +1001,8 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1025,6 +1013,8 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1035,6 +1025,8 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1045,6 +1037,8 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1055,6 +1049,8 @@
 				<true/>
 				<key>Arguments</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 		</array>
 		<key>Input</key>
