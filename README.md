@@ -35,7 +35,7 @@ Currently in use:
  proximitywake        0
  powernap             0
  networkoversleep     0
- disksleep            10
+ disksleep            0
  standbydelayhigh     86400
  sleep                1 (sleep prevented by UserEventAgent)
  autopoweroffdelay    259200
@@ -50,7 +50,7 @@ Currently in use:
 
 Quirk:
 
-- DVD player clicks every 7 minutes or so - seems to be known issue
+- ~~DVD player clicks every 7 minutes or so - seems to be known issue~~ Fixed by setting disksleep to 0
 
 What doesn't work:
 nothing (well, I don't know about apple services like handover and stuff as I don't use those. I guess it works).
