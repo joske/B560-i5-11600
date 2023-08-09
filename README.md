@@ -1,5 +1,9 @@
 # B560-i5-11600
 
+## Discontinued due to upgrade to i9 13900k
+
+see https://github.com/joske/B760-i9-13900k
+
 OpenCore config for my Rocket Lake desktop containing:
 
 - ASUS prime B560-PLUS
